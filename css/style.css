@@ -1,0 +1,490 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, a {
+  font-family: 'Lato', sans-serif;
+  font-size: 400;
+  color: #494949;
+}
+
+h3 {
+  margin-top: 3%;
+  margin-bottom: 5px;
+}
+
+h4, p {
+  font-family: 'Lato', sans-serif;
+  font-size: 300;
+}
+
+hr {
+  width: 30px;
+  height: 3px;
+  background: #0080c8;
+  border: 0;
+  margin: 0 auto 40px auto;
+}
+
+#logo, li, img, .button, .fa-bars {
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.1);
+  z-index: 1;
+}
+
+#logo {
+  float: left;
+  width: 140px;
+  margin: 15px 0 0 30px;
+}
+
+#logo:hover {
+  opacity: 0.5;
+}
+
+#logo img {
+  width: 100%;
+}
+
+header nav {
+  float: right;
+  margin: 10px 30px 0 0;
+}
+
+header nav ul li {
+  float: left;
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  font-size: 16px;
+}
+
+header nav ul li:hover {
+  opacity: 0.5;
+}
+
+/* HOME */
+
+#home {
+  background: url(../img/landing.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fa-chevron-circle-down {
+  padding-top: 550px;
+  color: white;
+  opacity: 0.9;
+  font-size: 35px;
+}
+
+.fa-chevron-circle-down:hover {
+  opacity: 1;
+}
+
+#generalInfo {
+  position: absolute;
+  top: 110px;
+  left: 55px;
+}
+
+#generalInfo h1 {
+  margin: 0 auto 0 auto;
+  font-size: 60px;
+  color: white;
+  background-color: #87bbe6;
+  padding: 5px 10px 5px 10px;
+}
+
+#generalInfo h2 {
+  margin: 0 auto 0 auto;
+  font-size: 20px;
+  color: #87bbe6;
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+}
+
+/* ABOUT */
+
+#about img {
+  width: 240px;
+}
+
+#about img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#about h3 {
+  padding-top: 6%;
+}
+
+#about h4 {
+  font-size: 25px;
+}
+
+#about p {
+  width: 700px;
+  margin: 0 auto 0 auto;
+}
+
+/* FUNCTIONS */
+
+#functions {
+  background-color: #f0f0f0;
+  margin: 0 auto 0 auto;
+}
+
+#functions ul {
+  width: 90%;
+}
+
+#functions h3 {
+  padding-top: 6%;
+}
+
+#functions img {
+  width: auto;
+  height: 100px;
+  margin-top: 25px;
+}
+
+#functions ul {
+  padding-top: 50px;
+}
+
+#functions ul li p {
+  height: 100px;
+}
+
+#functions ul li {
+  float: left;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#csuAemter2 {
+  display: none;
+}
+
+/* GALLERY */
+
+#gallery h3 {
+  padding-top: 6%;
+}
+
+#pictures {
+  width: 900px;
+  margin: 0 auto 0 auto;
+}
+
+#pictures ul {
+  padding: 0;
+}
+
+#pictures ul li {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 15px;
+}
+
+#gallery img {
+  width: 288px;
+  height: 216px;
+  border-radius: 5px;
+}
+
+#gallery img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#gallery p {
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+
+/* FOOTER */
+
+.social {
+  padding: 0 5px 0 5px;
+  color: #f0f0f0;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+footer {
+  width: 100%;
+  height: 112px;
+  background-color: #3f3f3f;
+}
+
+footer p {
+  font-size: 12px;
+  color: #f0f0f0;
+}
+
+footer a {
+  color: #f0f0f0;
+}
+
+footer a:hover {
+  opacity: 1
+}
+
+footer a i {
+  margin-top: 15px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+/* IMPRESSUM */
+
+#impressum {
+  margin: 70px 30px 30px 30px;
+  width: 60%;
+}
+
+#impressum h3 {
+  !font-size: 40px;
+}
+
+#impressum h4 {
+  !font-size: 30px;
+}
+
+/* DATENSCHUTZ */
+
+#datenschutz {
+  margin: 70px 30px 30px 30px;
+  width: 60%;
+}
+
+#datenschutz h3 {
+  !font-size: 40px;
+}
+
+#datenschutz h4 {
+  !font-size: 30px;
+}
+
+#datenschutz li {
+  list-style: initial;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLETS */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: auto;
+  }
+
+  #logo {
+    width: 100px;
+    margin-top: 5px;
+  }
+
+  header nav {
+    margin-top: -7px;
+  }
+
+  header nav ul li {
+    font-size: 12px;
+  }
+
+  #generalInfo h1 {
+    font-size: 40px;
+  }
+
+  #generalInfo h2 {
+    font-size: 20px;
+  }
+
+  #about p {
+    width: 80%;
+  }
+
+  #pictures {
+    width: 100%;
+  }
+
+  #pictures ul li {
+    width: 50%;
+  }
+
+  #gallery p {
+    margin: 0 10px 0 10px;
+  }
+
+  #functions img {
+    height: 80px;
+    width: auto;
+  }
+
+  #datenschutz {
+    width: 80%;
+  }
+
+  #impressum {
+    width: 80%;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
+  #logo {
+    width: 90px;
+    margin-left: 10px;
+  }
+
+  header nav {
+    float: none;
+    margin: 0;
+  }
+
+  .fa-chevron-circle-down {
+    padding-top: 450px;
+  }
+
+  .fa-bars {
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: right;
+    float: right;
+    width: 100%;
+    margin: -25px 30px 0 0;
+  }
+
+  .fa-bars:hover {
+    opacity: 0.5;
+  }
+
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  header nav ul.open {
+    height: auto;
+  }
+
+  header nav ul li {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+    font-size: 11px;
+    border-top: 1px solid #dddddd;
+  }
+
+  header nav ul li {
+    background-color: #eeeeee;
+  }
+
+  #generalInfo h1 {
+    font-size: 30px;
+    color: white;
+  }
+
+  #home {
+    background: url(../img/landingMobile.jpg);
+    background-position: top center;
+    background-size: 700px;
+    background-attachment: fixed;
+  }
+
+  #impressum {
+    padding: 0;
+    margin: 40px 10px 30px 10px;
+    width: 90%;
+  }
+
+  /* PICTURES */
+
+  #pictures {
+    float: none;
+  }
+
+  #pictures ul li {
+    width: 100%;
+  }
+
+  #functions ul {
+    padding: 10px 10px 25px 10px;
+    margin: auto 10px auto 10px;
+  }
+
+  /* FUNCTIONS */
+
+  #functions ul li {
+    float: none;
+    width: 100%;
+  }
+
+  #csuAemter {
+    display: none;
+  }
+
+  #csuAemter2 {
+    display: inline;
+  }
+
+  #csuSchoenbergLogo {
+    margin-top: 100px;
+  }
+
+  #datenschutz {
+    width: 90%;
+  }
+
+  #impressum {
+    width: 90%;
+  }
+}

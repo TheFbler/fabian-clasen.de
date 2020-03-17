@@ -220,6 +220,10 @@ header nav ul li:hover {
   text-align: left;
 }
 
+.dotsContainer {
+  margin-bottom: 15px;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;

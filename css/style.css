@@ -40,7 +40,7 @@ hr {
   margin: 0 auto 40px auto;
 }
 
-#logo, li, img, .button, .fa-bars {
+#home, #logo, li, img, .button, .fa-bars, header, body {
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -48,52 +48,68 @@ hr {
 }
 
 .fa-bars {
-  display: none;
+  position: absolute;
+  top: 0;
+  right: 0%;
+  color: white;
+  font-size: 30px;
+  background: #87bbe6;
+  padding: 15px;
+}
+
+/* Klassen beim öffnen des Menüs */
+
+.open {
+  right: 0;
+}
+
+.openBody {
+  /* Auch nach links schieben um das Verhältnis nicht zu verändern */
+  margin-right: 20%;
+  margin-left: -20%;
+}
+
+.openFaBars {
+  right: 20%;
 }
 
 /* HEADER */
 
 header {
-  width: 100%;
-  height: 65px;
+  width: 20%;
+  height: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  background: white;
-  box-shadow: 0 1px 3px rgba(0,0,0, 0.1);
-  z-index: 1;
+  right: -20%;
+  background: #87bbe6;
+  z-index: 99;
 }
 
 #logo {
-  float: left;
-  width: 140px;
-  margin: 15px 0 0 30px;
-}
-
-#logo:hover {
-  opacity: 0.5;
-}
-
-#logo img {
+  background-color: white;
   width: 100%;
 }
 
-header nav {
-  float: right;
-  margin: 10px 30px 0 0;
+#logo img {
+  width: 140px;
 }
 
-header nav ul li {
-  float: left;
-  margin-left: 25px;
+.navigation {
+  padding: 0;
+  margin: 0;
 }
 
-header nav ul li a {
-  font-size: 16px;
+.navigationItem {
+  padding: 12px;
 }
 
-header nav ul li:hover {
+.navigationItem:hover {
+  background-color: white;
   opacity: 0.5;
+}
+
+.navigationLink {
+  color: white;
 }
 
 /* HOME */
@@ -102,23 +118,12 @@ header nav ul li:hover {
   background: url(../img/landing.jpg);
   background-position: top center;
   background-size: cover;
-  background-attachment: fixed;
-}
-
-.fa-chevron-circle-down {
-  padding-top: 550px;
-  color: white;
-  opacity: 0.9;
-  font-size: 35px;
-}
-
-.fa-chevron-circle-down:hover {
-  opacity: 1;
+  background-attachment: scroll;
 }
 
 #generalInfo {
   position: absolute;
-  top: 110px;
+  top: 50px;
   left: 55px;
 }
 
@@ -461,18 +466,6 @@ footer a i {
 
   .fa-bars:hover {
     opacity: 0.5;
-  }
-
-  header nav ul {
-    height: 0;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  header nav ul.open {
-    height: auto;
   }
 
   header nav ul li {

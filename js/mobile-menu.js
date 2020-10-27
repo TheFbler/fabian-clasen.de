@@ -1,5 +1,7 @@
 $(document).ready(function() {
   $(".fa-bars").on("click", function() {
-    $("header nav ul").toggleClass("open");
+    $("header").toggleClass("open");
+    $(".fa-bars").toggleClass("openFaBars");
+    $("body").toggleClass("openBody");
   });
 });
